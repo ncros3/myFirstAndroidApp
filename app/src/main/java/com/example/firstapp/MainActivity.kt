@@ -8,9 +8,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //setContentView(R.layout.activity_main)
+        val appName = getResources().getString(R.string.app_name) // on récupère la chaîne de caractères associée à l'ID
+
         val text = TextView(this)
-        text.text = R.string.app_name.toString() // id de l'app_name décrit dans strings.xml
+        text.text = appName // affichage du nom de l'appli
         setContentView(text)
     }
 }
