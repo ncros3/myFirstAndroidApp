@@ -7,9 +7,10 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         //setContentView(R.layout.activity_main)
-        var text = TextView(this)
-        text.text = "Bonjour, vous me devez 1 000 000 euros."
+        val text = TextView(this)
+        text.text = R.string.app_name.toString() // id de l'app_name décrit dans strings.xml
         setContentView(text)
     }
 }
